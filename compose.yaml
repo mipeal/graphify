@@ -1,0 +1,8 @@
+services:
+  graphify:
+    build:
+      context: .
+      dockerfile: Dockerfile # Or a custom name like Dockerfile-app
+    restart: unless-stopped
+    ports:
+      - "8080:80"
